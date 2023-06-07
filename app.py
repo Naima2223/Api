@@ -9,6 +9,6 @@ def predict_tag():
     json_ = request.json
     data = json_
     question = data['question']
-    return question
+    return jsonify({"prediction": question})
 if __name__ == "__main__":
     app.run(debug=True)
