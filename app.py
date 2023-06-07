@@ -3,9 +3,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "Naima: Hello World!"
-
+@app.route("/predict_tag")
+def predict_tag():
+   # return "Naima: Hello World!"
+    json_ = request.json
+    data = json_
+    question = data['question']
+    return question
 if __name__ == "__main__":
     app.run(debug=True)
