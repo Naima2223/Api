@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
-from flask import request, jsonify
+from flask import request, jsonify, render_template
 app = Flask(__name__)
 
 # Home page
