@@ -1,1 +1,32 @@
-<h1>Titre</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Système de suggestion de tags </title>
+  </head>
+
+  <body style="background-color: rgb(150,220,250)">
+  <header>
+      <div class="wrapper">
+  
+          <h1>Système de suggestion de tags <span class="orange">.</span></h1>
+          <p style='font-size:23px'>Ce système vous suggére quelques tags relatifs à la question posée</p>
+          
+      </div>
+  </header>
+  
+  <form action="/predictTag" method='POST'> <!-- Send the data to the web server to be processed-->  
+    
+      <div>
+          
+          <label class="label-grand" for='question'> Question:</label><br>
+          <textarea id='question' name='question' cols="50" rows="20"></textarea>
+          
+      <div>
+      <p> <input type ="submit" value="predictTag"/> </p>
+  
+  </form>      
+      
+  </body>
+</html>
+
