@@ -39,11 +39,11 @@ def predictTag():
 	if question is not None:
 		question 		= str(question)
 		#return jsonify({"prediction": question})
-		question 		= review_to_tockens(question)
-		question 		= vectors.transform(question)
-		output 			= transformer.transform(question)
-		result 			= models.prediction(model, 0.35, output, target_col)
-		recommendation 	= result
+		#question 		= review_to_tockens(question)
+		#question 		= vectors.transform(question)
+		#output 			= transformer.transform(question)
+		#result 			= models.prediction(model, 0.35, output, target_col)
+		recommendation 	= question #result
 	return render_template('recommendation.html', tags = recommendation)# jsonify({"prediction": question}))
 
 if __name__ == "__main__":
