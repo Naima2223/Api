@@ -1,9 +1,22 @@
 # -*- coding: utf-8 -*-
-
+import pandas as pd
+import numpy as np
 from flask import Flask
 from flask import request, jsonify, render_template
 
+from functions import review_to_tockens
+import sklearn
+from joblib import load
+from models import models
 
+model_path 	= "models/stack_overflow_tag_prediction.joblib"
+target_path = "models/target_col.joblib"
+vectors_path 	= "models/tfidf_vectorizer.joblib"
+transformer_path = "models/normalize.joblib"
+model = load(model_path)
+target_col = load(target_path)
+vectors = load(vectors_path)
+transformer = load(transformer_path)
 
 
 
