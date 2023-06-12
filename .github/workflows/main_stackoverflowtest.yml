@@ -30,8 +30,7 @@ jobs:
         run: pip install --upgrade pip
       - name: Install pandas
         run:
-          pip install pandas==1.5.3    		
-		
+          pip install pandas==1.5.3	
       - name: generate requirements
         run: pip freeze > requirements.txt
       - name: Install dependencies
