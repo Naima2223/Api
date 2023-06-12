@@ -1,5 +1,6 @@
 import re
 import time
+import bs4
 from bs4 import BeautifulSoup 
 import nltk
 nltk.download('stopwords')
