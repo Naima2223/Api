@@ -34,7 +34,6 @@ jobs:
           pip install BeautifulSoup4
           pip install nltk
           pip install joblib
-		  
       - name: generate requirements
         run: pip freeze > requirements.txt
       - name: Install dependencies
