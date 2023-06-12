@@ -30,7 +30,11 @@ jobs:
         run: pip install --upgrade pip
       - name: Install pandas
         run:
-          pip install pandas==1.5.3	
+          pip install pandas==1.5.3
+          pip install BeautifulSoup4
+          pip install nltk
+          pip install joblib
+		  
       - name: generate requirements
         run: pip freeze > requirements.txt
       - name: Install dependencies
