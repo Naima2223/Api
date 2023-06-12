@@ -34,6 +34,7 @@ jobs:
           pip install BeautifulSoup4
           pip install nltk
           pip install joblib
+          pip install scikit-learn
       - name: generate requirements
         run: pip freeze > requirements.txt
       - name: Install dependencies
